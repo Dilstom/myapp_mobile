@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myapp</title>
+    <link
+    rel="stylesheet"
+    href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+  />
+  <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <!-- WELCOME PAGE -->
+    <section data-role="page" id="pgWelcome">
+        <header data-role="header">
+            <h1>MyApp</h1>
+        </header>
+        <article role="main" class="ui-content">
+            <h1>Welcome to MyApp</h1>
+            <a href="#pgSignUp" data-role="button">Sign Up</a>
+            <a href="#pgHome" data-role="button">Enter MyApp</a>
+
+        </article>
+        <footer data-role="footer" data-position='fixed'>
+            <h4>Page Footer</h4>
+        </footer>
+    </section>
+
+    <!-- SIGN UP PAGE -->
+    <section data-role="page" id="pgSignUp">
+        <header data-role="header" data-add-back-btn='true'>
+            <h1>Sign Up</h1>
+        </header>
+        <article role="main" class="ui-content">
+            <h1>Create Account</h1>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Repeat Password">
+                <input type="submit" value="Save">
+                <input type="reset" value="Cancel">
+            </form>
+        </article>
+        <footer data-role="footer" data-position='fixed'>
+            <h4>Page Footer</h4>
+        </footer>
+    </section>
+
+    <!-- HOME PAGE -->
+    <section data-role="page" id="pgHome">
+        <header data-role="header">
+            <a data-icon="home" href="#">MyApp</a>
+            <h1 >Home</h1>
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#pgSave" data-icon='cloud'>Save</a></li>
+                    <li><a href="#pgView" data-icon="eye">View</a></li>
+                    <li><a href="#pgOptions" data-icon="bullets">Options</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article role="main" class="ui-content">
+            <h1>Home Page</h1>
+
+        </article>
+        <footer data-role="footer" data-position='fixed'>
+            <h4>Page Footer</h4>
+        </footer>
+    </section>
+
+    <!-- SAVE PAGE -->
+    <section data-role="page" id="pgSave">
+        <header data-role="header">
+            <a data-icon="home" href="#pgHome">MyApp</a>
+            <h1>Save</h1>
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon='cloud' class='ui-btn-active ui-state-persist'>Save</a></li>
+                    <li><a href="#pgView" data-icon="eye">View</a></li>
+                    <li><a href="#pgOptions" data-icon="bullets">Options</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article role="main" class="ui-content">
+            <h1>Save</h1>
+
+        </article>
+        <footer data-role="footer" data-position='fixed'>
+            <h4>Page Footer</h4>
+        </footer>
+    </section>
+
+    <!-- VIEW PAGE -->
+    <section data-role="page" id="pgView">
+        <header data-role="header">
+            <a data-icon="home" href="#pgHome">MyApp</a>
+            <h1>View</h1>
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#pgSave" data-icon='cloud'>Save</a></li>
+                    <li><a href="#" data-icon="eye"  class='ui-btn-active ui-state-persist'>View</a></li>
+                    <li><a href="#pgOptions" data-icon="bullets">Options</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article role="main" class="ui-content">
+            <h1>View</h1>
+        </article>
+        <footer data-role="footer" data-position='fixed'>
+            <h4>Page Footer</h4>
+        </footer>
+    </section>
+
+    <!-- OPTIONS PAGE -->
+    <section data-role="page" id="pgOptions">
+        <header data-role="header">
+            <a data-icon="home" href="#pgHome">MyApp</a>
+            <h1>Options</h1>
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#pgSave" data-icon='cloud'>Save</a></li>
+                    <li><a href="#pgView" data-icon="eye">View</a></li>
+                    <li><a href="#" data-icon="bullets"   class='ui-btn-active ui-state-persist'>Options</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article role="main" class="ui-content">
+            <h1>Options</h1>
+        </article>
+        <footer data-role="footer" data-position='fixed'>
+            <h4>Page Footer</h4>
+        </footer>
+    </section>
+</body>
+</html>
